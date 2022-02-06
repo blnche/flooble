@@ -1,0 +1,169 @@
+
+/* footer */
+
+footer{
+    background-color: #707070;
+    color: white;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    /* flex: 1 1 20%; */
+}
+.footer > * :nth-child(1){
+    flex: 1 1 50%;
+}
+
+.footer > * :nth-child(2){
+    flex: 1 1 50%;
+}
+
+/* right class */
+
+.right{
+    float: right;
+}
+
+/* header */
+
+.header{
+    display: flex;
+    color: white;
+    /* flex: 1 1 20%; */
+}
+
+/* nav */
+
+.header > *:nth-child(1){
+    flex: 1 1 90%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    float: left;
+}
+a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+/* grid + image */
+
+.header > *:nth-child(2){
+    flex: 1 1 10%;
+}
+.grid-image{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* image */
+
+img{
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+}
+
+/* main content */
+.main{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+    justify-content: space-between;
+}
+.main > *{
+    flex-grow: 0;
+}
+.main >*:nth-child(1){
+    flex: 1 1 20%;
+}
+.main>*:nth-child(2){
+    flex: 1 1 60%;
+    max-height: min-content;
+}
+.main>*:nth-child(3){
+    flex: 1 1 20%;
+}
+/* title */
+
+.main-title{
+    color: white;
+    font-size: 70px;
+    letter-spacing: 40px;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin: 0px;
+    text-align: center;
+}
+
+/* search bar */
+.search-bar{
+    margin: 0;
+    
+}
+
+.search-bar-fill{
+    background-color: white;
+    border-radius: 37px;
+    height:66px;
+    width:851px;
+}
+.search-bar-icons{
+    display: flex;
+    margin: 20px;
+}
+.search-bar-icons > *:nth-child(1){
+    flex: 1 1 95%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.search-bar-icons > *:nth-child(2){
+    flex: 1 1 5%;
+    margin-top: 20px;
+}
+
+/* buttons */
+
+button{
+    border: none;
+    height: 72px;
+    width: 258px;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.buttons{
+    /* margin: auto; */
+    /* display: flex; */
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+/* body */
+
+.content{
+    background-color:#282C34;
+    font-size: 18px;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
