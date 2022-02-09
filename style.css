@@ -1,15 +1,14 @@
 
 /* footer */
 
-footer{
-    background-color: #707793;
-    color: white;
-}
 .footer{
+    color: white;
+    background-color: #707793;
     display: flex;
     justify-content: space-between;
     margin-top: auto;
     height: 60px;
+    min-height: max-content;
     align-items: center;
 }
 .footer > * :nth-child(1){
@@ -126,7 +125,7 @@ h1{
     background-color: white;
     border-radius: 37px;
     height:66px;
-    width:851px;
+    width: 800px;
 }
 .search-bar-icons{
     display: flex;
@@ -186,3 +185,9 @@ html, body{
 i, a, button, img:hover{
     cursor: pointer;
 }
+@media (max-width: 800px) {
+    .footer {
+      flex-direction: column;
+      flex: 1;
+    }
+  }
