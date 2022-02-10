@@ -51,7 +51,7 @@ a{
     padding: 14px 16px;
 }
 a:hover{
-    background-color: #CCCCCC;
+    color: #CCCCCC;
     transition-duration: 1s;
 }
 
@@ -110,15 +110,14 @@ img{
     display:inline-block;
     text-indent: -30px;;
 }
-h1{
-    margin: 0px;
+span{
+    color: #3BB99B;
 }
 
 /* search bar */
 .search-bar{
     margin: 10px;
     margin-top: 0;
-    
 }
 
 .search-bar-fill{
@@ -190,4 +189,8 @@ i, a, button, img:hover{
       flex-direction: column;
       flex: 1;
     }
+    .search-bar-icons > *:nth-child(2){
+        display: none; /*mic disappear when screen to small*/
+    }
+
   }
