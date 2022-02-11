@@ -7,7 +7,8 @@
     display: flex;
     justify-content: space-between;
     margin-top: auto;
-    height: 60px;
+    /* height: 60px; */
+    padding: 10px;
     min-height: max-content;
     align-items: center;
 }
@@ -52,7 +53,7 @@ a{
 }
 a:hover{
     color: #CCCCCC;
-    transition-duration: 1s;
+    transition-duration: 0.25s;
 }
 
 /* grid + image */
@@ -109,6 +110,7 @@ img{
     direction:rtl;
     display:inline-block;
     text-indent: -30px;;
+    /* max-width: 100%;  */
 }
 span{
     color: #3BB99B;
