@@ -15,6 +15,7 @@ html{
     display: flex;
     justify-content: space-between;
     margin-top: auto;
+
     align-items: center;
 }
 .footer>*{
@@ -112,14 +113,17 @@ img{
 .main-title{
     margin: 1em;
     margin-top: 1em;
+
 }
 
 /* search bar */
 .search-bar{
+
     margin: 1em;
     display: flex;
     position: relative;
     /* justify-content: center; */
+
 }
 .input-container{
     width: 100%;
@@ -207,6 +211,7 @@ i, a, button, img:hover{
     .footer {
       flex-direction: column;
     }
+
     .footer>*{
         padding: 0.5em;
     }
@@ -229,3 +234,4 @@ i, a, button, img:hover{
     color: #0f0 !important;
     outline: solid #f00 1px !important;
   } */
+
