@@ -1,3 +1,11 @@
+body{
+    height: 100%;
+    margin: 0;
+}
+html{
+    font-size: 100%;
+    height: 100%;
+}
 
 /* footer */
 
@@ -7,10 +15,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: auto;
-    /* height: 60px; */
-    padding: 10px;
-    min-height: max-content;
+
     align-items: center;
+}
+.footer>*{
+    padding: 1.5em;
 }
 .footer > * :nth-child(1){
     flex: 1 1 50%;
@@ -31,6 +40,8 @@
 .header{
     display: flex;
     color: white;
+    align-items: center;
+    padding-top: 0.5em;
 }
 
 /* nav */
@@ -47,9 +58,8 @@ li{
     float: left;
 }
 a{
-    display: block;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1em 1em;
 }
 a:hover{
     color: #CCCCCC;
@@ -68,30 +78,32 @@ a:hover{
 }
 
 /* image */
-
 img{
+    width: 100%;
+}
+
+.header img{
     border-radius: 50%;
-    height: 48px;
-    width: 48px;
+    height: 2.5em;
+    width: 2.5em;
+}
+.search-bar img{
+    height: 1.5em;
+    width: 1.5em;
 }
 
 /* main content */
 .main{
-    height: 100%;
     display: flex;
     flex-flow: column;
     align-items:center;
-    justify-content: space-between;
-}
-.main > *{
-    flex-grow: 0;
+    margin-top: 4em;
 }
 .main >*:nth-child(1){
     flex: 1 1 20%;
 }
 .main>*:nth-child(2){
     flex: 1 1 60%;
-    max-height: min-content;
 }
 .main>*:nth-child(3){
     flex: 1 1 20%;
@@ -99,67 +111,71 @@ img{
 /* title */
 
 .main-title{
-    color: white;
-    font-size: 50px;
-    margin: 10px;
-    margin-bottom: 0px;
-    margin-top: 40px;
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 30px;
-    direction:rtl;
-    display:inline-block;
-    text-indent: -30px;;
-    /* max-width: 100%;  */
-}
-span{
-    color: #3BB99B;
+    margin: 1em;
+    margin-top: 1em;
+
 }
 
 /* search bar */
 .search-bar{
-    margin: 10px;
-    margin-top: 0;
+
+    margin: 1em;
+    display: flex;
+    position: relative;
+    /* justify-content: center; */
+
+}
+.input-container{
+    width: 100%;
+}
+.search-bar > *:nth-child(1){
+    margin-top: 0.5em;
+    margin-left: 0.25em;
+    flex: 0 1 25%;
+    position: absolute;
+    left: 3%;
+    z-index: 1;
+}
+.search-bar > *:nth-child(2){
+    flex: 0 1 50%;
+    /* position: relative; */
+}
+.search-bar > *:nth-child(3){
+    margin-top: 0.5em;
+    margin-right: 0.25em;
+    flex: 0 1 25%;
+    position:absolute;
+    right: 3%;
 }
 
 .search-bar-fill{
     background-color: white;
-    border-radius: 37px;
-    height:66px;
-    width: 800px;
+    border-radius: 3em;
+    /* height:66px; */
+    /* width: 120%; */
+    border: none;
+    padding: 1em 2.5em;
 }
-.search-bar-icons{
-    display: flex;
-    margin: 20px;
-}
-.search-bar-icons > *:nth-child(1){
-    flex: 1 1 95%;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-.search-bar-icons > *:nth-child(2){
-    flex: 1 1 5%;
-    margin-top: 20px;
-}
-
 /* buttons */
 
 button{
     border: none;
-    height: 72px;
-    width: 258px;
-    border-radius: 5px;
-    margin: 15px;
+    height: 3.5em;
+    width: 12em;
+    border-radius: 0.5em;
+    margin: 0.75em;
     background-color: white;
-    font-size: 22px;
+    font-size: 1em;
     color: #707793;
     font-family: Arial, sans-serif;
 }
 
 .buttons{
-    justify-content: center;
-    margin: 25px;
-    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
+    padding: 1em;
+    max-height: fit-content;
 }
 .buttons >*:hover{
     background-color: #DFDFDF;
@@ -172,27 +188,50 @@ button{
 
 .content{
     background-color:#282C34;
-    font-size: 18px;
+    font-size: 1em;
     display: flex;
-    flex-flow: column;
-    height: 100%;
+    flex-direction: column;
+    min-height: 100%;
     font-family: 'Poppins', sans-serif;
+    justify-content: space-between;
 }
-html, body{
-    height: 100%;
-    width: 100%;
-    margin: 0;
+.content>*:nth-child(1){
+    flex: 0 0 10%;
+}
+.content>*:nth-child(2){
+    flex: 0 0 80%;
+}
+.content>*:nth-child(3){
+    flex: 0 0 10%;
 }
 i, a, button, img:hover{
     cursor: pointer;
 }
-@media (max-width: 800px) {
+@media (max-width: 60rem) {
     .footer {
       flex-direction: column;
-      flex: 1;
     }
-    .search-bar-icons > *:nth-child(2){
-        display: none; /*mic disappear when screen to small*/
+
+    .footer>*{
+        padding: 0.5em;
+    }
+    .header>*:nth-child(1){
+        flex-basis: 80%;
+    }
+    .header>*:nth-child(2){
+        flex-basis: 20%;
+    }
+    .buttons{
+        flex-direction: column;
+    }
+    a{
+        padding: 0.25em 0.25em;
     }
 
   }
+  /* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  } */
+
