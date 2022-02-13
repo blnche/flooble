@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <style> @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');</style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="hamburger-nav.js"></script>
 </head>
 
 
@@ -13,26 +14,27 @@
 
         <!-- header + nav -->
         <header>
-            <div class="header">
+            <div class="header" id="myHeader">
 
                 <!-- nav -->
-                <div>
+                <div class="topnav" id="myTopnav">
                     <nav>
-                        <ul>
-                            <li><a>About</a></li>
-                            <li><a>Store</a></li>
-                        </ul>
-                        <ul class="right">
-                            <li><a>FlooMail</a></li>
-                            <li><a>Images</a></li>
-                        </ul>
+                        <a href="#" class="active">About</a> 
+                        <a href="#">Store</a> 
+                        <div class="right">
+                            <a href="#">FlooMail</a> 
+                            <a href="#">Images</a> 
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <img src="./svg/list.svg" alt="list toggle menu">
+                            </a>
+                        </div>
                     </nav>
                 </div>
 
                 <div class="grid-image">
                     <!-- grid icon -->
                     <div>
-                        <i class="bi bi-grid-3x3-gap-fill"></i>        
+                        <a href="#" id="hidden"><i class="bi bi-grid-3x3-gap-fill"></i></a>   
                     </div>
     
                     <!-- image -->
@@ -82,17 +84,17 @@
             <div class="footer">
 
                 <div>
-                    <ul>
-                        <li><a>Advertising</a></li>
-                        <li><a>Business</a></li>
-                    </ul>
+                    <!-- <ul> -->
+                         <a href="#">Advertising</a> 
+                         <a href="#">Business</a> 
+                    <!-- </ul> -->
                 </div>
                 <div class="right">
-                    <ul>
-                        <li><a>Privacy</a></li>
-                        <li><a>Terms</a></li>
-                        <li><a>Settings</a></li>
-                    </ul>
+                    <!-- <ul> -->
+                         <a href="#">Privacy</a> 
+                         <a href="#">Terms</a> 
+                         <a href="#">Settings</a> 
+                    <!-- </ul> -->
                 </div>
 
             </div>
